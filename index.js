@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // 2) Rutas
 app.get("/prueba", function (req, res) {
-  res.send("Hola Mundo");
+  res.sendFile(__dirname + "/index.html");
 });
 
 // 3) Listen
